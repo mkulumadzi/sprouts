@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D22D1ABF1C7527E100C91866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1ABE1C7527E100C91866 /* AppDelegate.swift */; };
-		D22D1AC11C7527E100C91866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AC01C7527E100C91866 /* ViewController.swift */; };
 		D22D1AC41C7527E100C91866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22D1AC21C7527E100C91866 /* Main.storyboard */; };
 		D22D1AC61C7527E100C91866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D22D1AC51C7527E100C91866 /* Assets.xcassets */; };
 		D22D1AC91C7527E100C91866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22D1AC71C7527E100C91866 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,7 @@
 		D22D1AF21C7532AA00C91866 /* BaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF11C7532AA00C91866 /* BaseMapViewController.swift */; };
 		D22D1AF41C7532EB00C91866 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF31C7532EB00C91866 /* Permissions.swift */; };
 		D22D1AF81C7534C800C91866 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF71C7534C800C91866 /* MainViewController.swift */; };
+		D22D1AFA1C753CE800C91866 /* IWantSproutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF91C753CE800C91866 /* IWantSproutsViewController.swift */; };
 		D673901E1828D14010825A89 /* Pods_sprouts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15FCB6C60E8BADBDC07E6A1 /* Pods_sprouts.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,6 @@
 		A15FCB6C60E8BADBDC07E6A1 /* Pods_sprouts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sprouts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22D1ABB1C7527E100C91866 /* sprouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sprouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22D1ABE1C7527E100C91866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D22D1AC01C7527E100C91866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D22D1AC31C7527E100C91866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D22D1AC51C7527E100C91866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D22D1AC81C7527E100C91866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		D22D1AF11C7532AA00C91866 /* BaseMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMapViewController.swift; sourceTree = "<group>"; };
 		D22D1AF31C7532EB00C91866 /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		D22D1AF71C7534C800C91866 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D22D1AF91C753CE800C91866 /* IWantSproutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWantSproutsViewController.swift; sourceTree = "<group>"; };
 		E369F818470310CABC756106 /* Pods-sprouts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.release.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.release.xcconfig"; sourceTree = "<group>"; };
 		EE04168788EB68EACCC5E9C8 /* Pods-sprouts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,13 +116,13 @@
 			children = (
 				D22D1AEC1C7531E300C91866 /* Shared View Controllers */,
 				D22D1ABE1C7527E100C91866 /* AppDelegate.swift */,
-				D22D1AC01C7527E100C91866 /* ViewController.swift */,
 				D22D1AC21C7527E100C91866 /* Main.storyboard */,
 				D22D1AC51C7527E100C91866 /* Assets.xcassets */,
 				D22D1AC71C7527E100C91866 /* LaunchScreen.storyboard */,
 				D22D1ACA1C7527E100C91866 /* Info.plist */,
 				D22D1AF31C7532EB00C91866 /* Permissions.swift */,
 				D22D1AF71C7534C800C91866 /* MainViewController.swift */,
+				D22D1AF91C753CE800C91866 /* IWantSproutsViewController.swift */,
 			);
 			path = sprouts;
 			sourceTree = "<group>";
@@ -356,9 +356,9 @@
 			files = (
 				D22D1AF81C7534C800C91866 /* MainViewController.swift in Sources */,
 				D22D1AF01C75326800C91866 /* BaseNavigationController.swift in Sources */,
-				D22D1AC11C7527E100C91866 /* ViewController.swift in Sources */,
 				D22D1ABF1C7527E100C91866 /* AppDelegate.swift in Sources */,
 				D22D1AF21C7532AA00C91866 /* BaseMapViewController.swift in Sources */,
+				D22D1AFA1C753CE800C91866 /* IWantSproutsViewController.swift in Sources */,
 				D22D1AF41C7532EB00C91866 /* Permissions.swift in Sources */,
 				D22D1AEE1C75321C00C91866 /* BaseViewController.swift in Sources */,
 			);
