@@ -14,6 +14,10 @@
 		D22D1AC91C7527E100C91866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D22D1AC71C7527E100C91866 /* LaunchScreen.storyboard */; };
 		D22D1AD41C7527E100C91866 /* sproutsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AD31C7527E100C91866 /* sproutsTests.swift */; };
 		D22D1ADF1C7527E100C91866 /* sproutsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1ADE1C7527E100C91866 /* sproutsUITests.swift */; };
+		D22D1AEE1C75321C00C91866 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AED1C75321C00C91866 /* BaseViewController.swift */; };
+		D22D1AF01C75326800C91866 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AEF1C75326800C91866 /* BaseNavigationController.swift */; };
+		D22D1AF21C7532AA00C91866 /* BaseMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF11C7532AA00C91866 /* BaseMapViewController.swift */; };
+		D22D1AF41C7532EB00C91866 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF31C7532EB00C91866 /* Permissions.swift */; };
 		D673901E1828D14010825A89 /* Pods_sprouts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15FCB6C60E8BADBDC07E6A1 /* Pods_sprouts.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +53,10 @@
 		D22D1ADA1C7527E100C91866 /* sproutsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sproutsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D22D1ADE1C7527E100C91866 /* sproutsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sproutsUITests.swift; sourceTree = "<group>"; };
 		D22D1AE01C7527E100C91866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D22D1AED1C75321C00C91866 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D22D1AEF1C75326800C91866 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		D22D1AF11C7532AA00C91866 /* BaseMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseMapViewController.swift; sourceTree = "<group>"; };
+		D22D1AF31C7532EB00C91866 /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		E369F818470310CABC756106 /* Pods-sprouts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.release.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.release.xcconfig"; sourceTree = "<group>"; };
 		EE04168788EB68EACCC5E9C8 /* Pods-sprouts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,12 +112,14 @@
 		D22D1ABD1C7527E100C91866 /* sprouts */ = {
 			isa = PBXGroup;
 			children = (
+				D22D1AEC1C7531E300C91866 /* Shared View Controllers */,
 				D22D1ABE1C7527E100C91866 /* AppDelegate.swift */,
 				D22D1AC01C7527E100C91866 /* ViewController.swift */,
 				D22D1AC21C7527E100C91866 /* Main.storyboard */,
 				D22D1AC51C7527E100C91866 /* Assets.xcassets */,
 				D22D1AC71C7527E100C91866 /* LaunchScreen.storyboard */,
 				D22D1ACA1C7527E100C91866 /* Info.plist */,
+				D22D1AF31C7532EB00C91866 /* Permissions.swift */,
 			);
 			path = sprouts;
 			sourceTree = "<group>";
@@ -130,6 +140,16 @@
 				D22D1AE01C7527E100C91866 /* Info.plist */,
 			);
 			path = sproutsUITests;
+			sourceTree = "<group>";
+		};
+		D22D1AEC1C7531E300C91866 /* Shared View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D22D1AED1C75321C00C91866 /* BaseViewController.swift */,
+				D22D1AEF1C75326800C91866 /* BaseNavigationController.swift */,
+				D22D1AF11C7532AA00C91866 /* BaseMapViewController.swift */,
+			);
+			name = "Shared View Controllers";
 			sourceTree = "<group>";
 		};
 		D2D83E34433DD813311D2AD2 /* Frameworks */ = {
@@ -331,8 +351,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22D1AF01C75326800C91866 /* BaseNavigationController.swift in Sources */,
 				D22D1AC11C7527E100C91866 /* ViewController.swift in Sources */,
 				D22D1ABF1C7527E100C91866 /* AppDelegate.swift in Sources */,
+				D22D1AF21C7532AA00C91866 /* BaseMapViewController.swift in Sources */,
+				D22D1AF41C7532EB00C91866 /* Permissions.swift in Sources */,
+				D22D1AEE1C75321C00C91866 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
