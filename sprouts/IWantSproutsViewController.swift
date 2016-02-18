@@ -117,15 +117,28 @@ class IWantSproutsViewController: UIViewController, UICollectionViewDelegate, UI
 
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("Cell selected")
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        performSegueWithIdentifier("viewItem", sender: cell)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "viewItem" {
+            let cell = sender as! ItemCell
+            let itemViewController = segue.destinationViewController as! ItemViewController
+            itemViewController.item = cell.item
+            itemViewController.place = cell.item.place
+        }
     }
     
     //MARK: Other user actions
     
     
     @IBAction func swipedUp(sender: AnyObject) {
-        print("Swiped!")
         performSegueWithIdentifier("backToMainMenu", sender: nil)
+    }
+    
+    @IBAction func itemViewDismissed(segue: UIStoryboardSegue) {
+        
     }
     
 

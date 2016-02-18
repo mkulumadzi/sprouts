@@ -119,7 +119,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Vm3-da-toZ" id="nB9-wI-rou"/>
-                        <segue destination="b7z-kt-9C0" kind="presentation" identifier="viewItem" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="mct-Wh-wgp"/>
+                        <segue destination="b7z-kt-9C0" kind="show" identifier="viewItem" action="showDetailViewController:sender:" id="mct-Wh-wgp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOD-78-565" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="-302"/>
         </scene>
-        <!--View Controller-->
+        <!--Item View Controller-->
         <scene sceneID="cIJ-j1-NmM">
             <objects>
-                <viewController id="b7z-kt-9C0" sceneMemberID="viewController">
+                <viewController id="b7z-kt-9C0" customClass="ItemViewController" customModule="sprouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zfK-Wd-Ni8"/>
                         <viewControllerLayoutGuide type="bottom" id="Vfq-af-PN7"/>
@@ -150,18 +150,42 @@
                                     <constraint firstAttribute="width" secondItem="e2s-tM-WVq" secondAttribute="height" multiplier="1:1" id="swx-dV-sRE"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="itemName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Y88-YP-3Q7">
+                                <rect key="frame" x="20" y="590" width="560" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" red="0.41176470590000003" green="0.75294117650000003" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="e2s-tM-WVq" secondAttribute="trailing" id="BL0-Np-vpF"/>
+                            <constraint firstItem="Y88-YP-3Q7" firstAttribute="leading" secondItem="Bf9-RF-ahu" secondAttribute="leadingMargin" id="DVl-KN-VAi"/>
                             <constraint firstItem="e2s-tM-WVq" firstAttribute="top" secondItem="zfK-Wd-Ni8" secondAttribute="bottom" id="Ee4-vN-B48"/>
                             <constraint firstItem="e2s-tM-WVq" firstAttribute="leading" secondItem="Bf9-RF-ahu" secondAttribute="leadingMargin" id="Rhm-nm-6NP"/>
+                            <constraint firstItem="Y88-YP-3Q7" firstAttribute="top" secondItem="e2s-tM-WVq" secondAttribute="bottom" constant="10" id="XCb-t0-LYq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y88-YP-3Q7" secondAttribute="trailing" id="dGc-Eh-Oji"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WWF-5C-tHC" appends="YES" id="GYu-Jf-jCo"/>
+                        </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
+                    <connections>
+                        <outlet property="itemImage" destination="e2s-tM-WVq" id="QdN-oM-pxe"/>
+                        <outlet property="itemNameLabel" destination="Y88-YP-3Q7" id="g4E-Rk-0kF"/>
+                        <segue destination="Lbn-JY-lZ9" kind="unwind" identifier="itemViewDismissed" unwindAction="itemViewDismissed:" id="oNb-7H-0nY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f8d-6W-58I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Lbn-JY-lZ9" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="right" id="WWF-5C-tHC" userLabel="swipeRight">
+                    <connections>
+                        <action selector="swipedRight:" destination="b7z-kt-9C0" id="2go-DX-ydy"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1003" y="-302"/>
         </scene>
