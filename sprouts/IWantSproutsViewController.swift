@@ -82,7 +82,7 @@ class IWantSproutsViewController: UIViewController, UICollectionViewDelegate, UI
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         
         //Assuming a margin of 10.0, and three columns
-        let dimension = (view.frame.width - 33) / 2
+        let dimension = (view.frame.width - 30) / 2
         let size = CGSize(width: dimension, height: dimension)
         return size
     }

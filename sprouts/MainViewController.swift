@@ -24,11 +24,13 @@ class MainViewController: BaseViewController, SlideDownTransitionDelegate {
         guard let iWantSproutsLabel = iWantSproutsButton.titleLabel, iAteSproutsLabel = iAteSproutsButton.titleLabel else {
             return
         }
-        iWantSproutsLabel.numberOfLines = 1
-        iWantSproutsLabel.adjustsFontSizeToFitWidth = true
+        iWantSproutsLabel.numberOfLines = 0
+        iWantSproutsLabel.textAlignment = .Center
+//        iWantSproutsLabel.adjustsFontSizeToFitWidth = true
         
-        iAteSproutsLabel.numberOfLines = 1
-        iAteSproutsLabel.adjustsFontSizeToFitWidth = true
+        iAteSproutsLabel.numberOfLines = 0
+        iAteSproutsLabel.textAlignment = .Center
+//        iAteSproutsLabel.adjustsFontSizeToFitWidth = true
         
     }
     

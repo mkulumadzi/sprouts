@@ -133,13 +133,22 @@
                                     <segue destination="616-ji-UpF" kind="presentation" identifier="iWantSprouts" id="17g-MQ-5YR"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sprout-drawing" translatesAutoresizingMaskIntoConstraints="NO" id="bFG-Vx-vld">
+                                <rect key="frame" x="240" y="240" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="0po-Rm-Z7Y"/>
+                                    <constraint firstAttribute="width" constant="120" id="IwN-vW-4jm"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aTR-be-mcf" secondAttribute="trailing" constant="30" id="7QM-NI-vXn"/>
+                            <constraint firstItem="bFG-Vx-vld" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="81k-Eg-bZL"/>
                             <constraint firstItem="Vba-Tx-y9o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="D6R-LU-Noh"/>
                             <constraint firstAttribute="trailing" secondItem="Vba-Tx-y9o" secondAttribute="trailing" constant="30" id="PMu-eb-JDB"/>
+                            <constraint firstItem="bFG-Vx-vld" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XsL-cg-1Qe"/>
                             <constraint firstItem="aTR-be-mcf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="gtH-8w-psP"/>
                             <constraint firstItem="Vba-Tx-y9o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="rAO-mw-iJo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aTR-be-mcf" secondAttribute="bottom" constant="50" id="zUS-PX-Ite"/>
@@ -219,4 +228,7 @@
             <point key="canvasLocation" x="305" y="1209"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sprout-drawing" width="363" height="385"/>
+    </resources>
 </document>
