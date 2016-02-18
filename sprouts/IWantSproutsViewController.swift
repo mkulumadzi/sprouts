@@ -14,6 +14,7 @@ class IWantSproutsViewController: UIViewController, UICollectionViewDelegate, UI
     @IBOutlet weak var collectionView: UICollectionView!
     
     var items:[Item]!
+    var places:[Place]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +31,12 @@ class IWantSproutsViewController: UIViewController, UICollectionViewDelegate, UI
     
     func initializeDemoData() {
         
-        let item1 = Item(name: "Roasted Brussel Sprouts", image: nil)
-        let item2 = Item(name: "Brussel Sprouts on Toast", image: nil)
-        let item3 = Item(name: "Grilled Cheese", image: nil)
-        let item4 = Item(name: "Pizza with Sprouts", image: nil)
+        initializeDemoPlaces()
+        
+        let item1 = Item(name: "Roasted Brussel Sprouts", place: places[0], image: nil)
+        let item2 = Item(name: "Brussel Sprouts on Toast", place: places[1], image: nil)
+        let item3 = Item(name: "Grilled Cheese", place: places[2], image: nil)
+        let item4 = Item(name: "Pizza with Sprouts", place: places[0], image: nil)
         
         if let roastedImage = UIImage(named: "roasted_sprouts.jpg") {
             item1.image = roastedImage
@@ -49,6 +52,26 @@ class IWantSproutsViewController: UIViewController, UICollectionViewDelegate, UI
         }
         
         items = [item1, item2, item3, item4]
+    }
+    
+    func initializeDemoPlaces() {
+        
+        let place1 = Place(name: "Heavenly Kitchen", details: "Get your sprouts three ways", image: nil)
+        let place2 = Place(name: "Joe's Pizza", details: "Sprouts on pizza!", image: nil)
+        let place3 = Place(name: "Park", details: "Fancy sprouts", image: nil)
+        
+        if let image = UIImage(named: "heavenly_kitchen.jpg") {
+            place1.image = image
+        }
+        if let image = UIImage(named: "joes_pizza.jpg") {
+            place2.image = image
+        }
+        if let image = UIImage(named: "park.jpg") {
+            place3.image = image
+        }
+        
+        
+        places = [place1, place2, place3]
     }
     
     // MARK: Collection flow layout
@@ -72,6 +95,7 @@ class IWantSproutsViewController: UIViewController, UICollectionViewDelegate, UI
             let item = items[indexPath.row]
             cell.item = item
             cell.itemNameLabel.text = item.name
+            cell.itemPlaceLabel.text = item.place.name
             if let image = item.image {
                 cell.itemImage.image = image
             }
@@ -113,6 +137,7 @@ class ItemCell: UICollectionViewCell {
     
     @IBOutlet weak var itemImage:UIImageView!
     @IBOutlet weak var itemNameLabel: UILabel!
+    @IBOutlet weak var itemPlaceLabel: UILabel!
     
 }
 
