@@ -24,6 +24,7 @@
 		D22D1B041C754CE200C91866 /* sprouts_on_toast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B001C754CE200C91866 /* sprouts_on_toast.jpg */; };
 		D22D1B051C754CE200C91866 /* grilled_cheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B011C754CE200C91866 /* grilled_cheese.jpg */; };
 		D22D1B061C754CE200C91866 /* roasted_sprouts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B021C754CE200C91866 /* roasted_sprouts.jpg */; };
+		D22D1B091C7554A100C91866 /* IAteSproutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1B081C7554A100C91866 /* IAteSproutsViewController.swift */; };
 		D673901E1828D14010825A89 /* Pods_sprouts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15FCB6C60E8BADBDC07E6A1 /* Pods_sprouts.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		D22D1B001C754CE200C91866 /* sprouts_on_toast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sprouts_on_toast.jpg; sourceTree = "<group>"; };
 		D22D1B011C754CE200C91866 /* grilled_cheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grilled_cheese.jpg; sourceTree = "<group>"; };
 		D22D1B021C754CE200C91866 /* roasted_sprouts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roasted_sprouts.jpg; sourceTree = "<group>"; };
+		D22D1B081C7554A100C91866 /* IAteSproutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAteSproutsViewController.swift; sourceTree = "<group>"; };
 		E369F818470310CABC756106 /* Pods-sprouts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.release.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.release.xcconfig"; sourceTree = "<group>"; };
 		EE04168788EB68EACCC5E9C8 /* Pods-sprouts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 				D22D1AF31C7532EB00C91866 /* Permissions.swift */,
 				D22D1AF71C7534C800C91866 /* MainViewController.swift */,
 				D22D1AF91C753CE800C91866 /* IWantSproutsViewController.swift */,
+				D22D1B081C7554A100C91866 /* IAteSproutsViewController.swift */,
 			);
 			path = sprouts;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				D22D1ABF1C7527E100C91866 /* AppDelegate.swift in Sources */,
 				D22D1AF21C7532AA00C91866 /* BaseMapViewController.swift in Sources */,
 				D22D1AFC1C7549E600C91866 /* Item.swift in Sources */,
+				D22D1B091C7554A100C91866 /* IAteSproutsViewController.swift in Sources */,
 				D22D1AFA1C753CE800C91866 /* IWantSproutsViewController.swift in Sources */,
 				D22D1AF41C7532EB00C91866 /* Permissions.swift in Sources */,
 				D22D1AEE1C75321C00C91866 /* BaseViewController.swift in Sources */,

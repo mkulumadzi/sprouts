@@ -41,4 +41,14 @@ class MainViewController: BaseViewController {
     }
     
     
+    @IBAction func swipedDown(sender: AnyObject) {
+        performSegueWithIdentifier("iWantSprouts", sender: nil)
+    }
+    
+    
+    @IBAction func swipedUp(sender: AnyObject) {
+        performSegueWithIdentifier("iAteSprouts", sender: nil)
+    }
+    
+    
 }

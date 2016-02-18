@@ -95,8 +95,14 @@ class IWantSproutsViewController: UIViewController, UICollectionViewDelegate, UI
         print("Cell selected")
     }
     
+    //MARK: Other user actions
     
-
+    
+    @IBAction func swipedUp(sender: AnyObject) {
+        print("Swiped!")
+        performSegueWithIdentifier("backToMainMenu", sender: nil)
+    }
+    
 
 }
 

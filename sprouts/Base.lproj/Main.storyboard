@@ -73,6 +73,7 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Vm3-da-toZ" firstAttribute="top" secondItem="wTa-rh-B9Y" secondAttribute="bottom" id="5Hs-he-ORU"/>
                             <constraint firstAttribute="trailing" secondItem="Vm3-da-toZ" secondAttribute="trailing" id="AhJ-IS-alN"/>
@@ -82,6 +83,9 @@
                             <constraint firstItem="dSf-kO-k2r" firstAttribute="top" secondItem="Vm3-da-toZ" secondAttribute="bottom" id="dac-eQ-DpH"/>
                             <constraint firstItem="YMs-Tk-SfT" firstAttribute="top" secondItem="dSf-kO-k2r" secondAttribute="bottom" id="eeQ-SD-qvX"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="C95-eI-pL6" appends="YES" id="OHb-9z-Umb"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="Vm3-da-toZ" id="nB9-wI-rou"/>
@@ -89,6 +93,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOD-78-565" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="cfn-I8-MDN" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="up" id="C95-eI-pL6" userLabel="swipeUp">
+                    <connections>
+                        <action selector="swipedUp:" destination="616-ji-UpF" id="Zgu-PO-D8l"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="-302"/>
         </scene>
@@ -126,6 +135,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aTR-be-mcf" secondAttribute="trailing" constant="30" id="7QM-NI-vXn"/>
                             <constraint firstItem="Vba-Tx-y9o" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="D6R-LU-Noh"/>
@@ -134,6 +144,10 @@
                             <constraint firstItem="Vba-Tx-y9o" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="rAO-mw-iJo"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aTR-be-mcf" secondAttribute="bottom" constant="50" id="zUS-PX-Ite"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cz7-5O-z2x" appends="YES" id="7hJ-0r-yDm"/>
+                            <outletCollection property="gestureRecognizers" destination="F6c-Ad-B8v" appends="YES" id="iKx-Ku-oI9"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="iAteSproutsButton" destination="aTR-be-mcf" id="kUm-Ep-oFt"/>
@@ -141,13 +155,23 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="cz7-5O-z2x" userLabel="swipeDown">
+                    <connections>
+                        <action selector="swipedDown:" destination="BYZ-38-t0r" id="yFn-aj-8W1"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="F6c-Ad-B8v" userLabel="swipeUp">
+                    <connections>
+                        <action selector="swipedUp:" destination="BYZ-38-t0r" id="SKp-Ve-CTW"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="387"/>
         </scene>
-        <!--View Controller-->
+        <!--Ate Sprouts View Controller-->
         <scene sceneID="Kf6-ZL-brr">
             <objects>
-                <viewController id="tkR-mM-a9o" sceneMemberID="viewController">
+                <viewController id="tkR-mM-a9o" customClass="IAteSproutsViewController" customModule="sprouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="F0f-zn-76x"/>
                         <viewControllerLayoutGuide type="bottom" id="Q9T-5u-xhe"/>
@@ -173,15 +197,24 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="DPy-N5-DJn" secondAttribute="trailing" id="1Ih-iE-ymD"/>
                             <constraint firstItem="DPy-N5-DJn" firstAttribute="top" secondItem="Fy6-O5-8wB" secondAttribute="top" id="7g5-OL-2if"/>
                             <constraint firstItem="DPy-N5-DJn" firstAttribute="leading" secondItem="Fy6-O5-8wB" secondAttribute="leading" id="hSX-di-n4J"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="DEQ-aN-DJs" appends="YES" id="g2Y-j9-ohh"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sem-0V-UY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dLe-YZ-Arg" userLabel="Exit" sceneMemberID="exit"/>
+                <swipeGestureRecognizer direction="down" id="DEQ-aN-DJs" userLabel="swipedDown">
+                    <connections>
+                        <action selector="swipedDown:" destination="tkR-mM-a9o" id="TSN-Yw-UGF"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="305" y="1209"/>
         </scene>
