@@ -4,13 +4,25 @@
 import Foundation
 import UIKit
 
+protocol SlideDownTransitionDelegate {
+    func dismiss()
+}
 
 class SlideDownTransition: NSObject, UIViewControllerAnimatedTransitioning, UIViewControllerTransitioningDelegate {
     
     var duration = 0.5
     var isPresenting = false
     
-    var snapshot:UIView?
+    var delegate:SlideDownTransitionDelegate?
+    
+    var snapshot:UIView? {
+        didSet {
+            if let _delegate = delegate as? AnyObject {
+                let tapGestureRecognizer = UITapGestureRecognizer(target: _delegate, action: "dismiss")
+                snapshot?.addGestureRecognizer(tapGestureRecognizer)
+            }
+        }
+    }
     
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return duration
@@ -27,7 +39,7 @@ class SlideDownTransition: NSObject, UIViewControllerAnimatedTransitioning, UIVi
         let toView = transitionContext.viewForKey(UITransitionContextToViewKey)!
         
         // Set up the transform for sliding
-        let moveDown = CGAffineTransformMakeTranslation(0, container.frame.height - 150)
+        let moveDown = CGAffineTransformMakeTranslation(0, container.frame.height)
         let moveUp = CGAffineTransformMakeTranslation(0, -50)
         
         // Add both views to the container view

@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MainViewController: BaseViewController {
-    
+class MainViewController: BaseViewController, SlideDownTransitionDelegate {
     
     @IBOutlet weak var iWantSproutsButton: UIButton!
     @IBOutlet weak var iAteSproutsButton: UIButton!
+    
+    var slideDownTransition = SlideDownTransition()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,9 +38,7 @@ class MainViewController: BaseViewController {
     }
     
     @IBAction func returnToMainMenu(segue: UIStoryboardSegue) {
-        
     }
-    
     
     @IBAction func swipedDown(sender: AnyObject) {
         performSegueWithIdentifier("iWantSprouts", sender: nil)
@@ -48,6 +47,17 @@ class MainViewController: BaseViewController {
     
     @IBAction func swipedUp(sender: AnyObject) {
         performSegueWithIdentifier("iAteSprouts", sender: nil)
+    }
+    
+    func dismiss() {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "iWantSprouts" {
+            let iWantSproutsController = segue.destinationViewController as! IWantSproutsViewController
+            iWantSproutsController.transitioningDelegate = self.slideDownTransition
+        }
     }
     
     
