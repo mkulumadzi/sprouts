@@ -19,6 +19,11 @@
 		D22D1AF41C7532EB00C91866 /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF31C7532EB00C91866 /* Permissions.swift */; };
 		D22D1AF81C7534C800C91866 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF71C7534C800C91866 /* MainViewController.swift */; };
 		D22D1AFA1C753CE800C91866 /* IWantSproutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AF91C753CE800C91866 /* IWantSproutsViewController.swift */; };
+		D22D1AFC1C7549E600C91866 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1AFB1C7549E600C91866 /* Item.swift */; };
+		D22D1B031C754CE200C91866 /* sprouts_on_pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1AFF1C754CE200C91866 /* sprouts_on_pizza.jpg */; };
+		D22D1B041C754CE200C91866 /* sprouts_on_toast.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B001C754CE200C91866 /* sprouts_on_toast.jpg */; };
+		D22D1B051C754CE200C91866 /* grilled_cheese.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B011C754CE200C91866 /* grilled_cheese.jpg */; };
+		D22D1B061C754CE200C91866 /* roasted_sprouts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B021C754CE200C91866 /* roasted_sprouts.jpg */; };
 		D673901E1828D14010825A89 /* Pods_sprouts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15FCB6C60E8BADBDC07E6A1 /* Pods_sprouts.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +64,11 @@
 		D22D1AF31C7532EB00C91866 /* Permissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
 		D22D1AF71C7534C800C91866 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D22D1AF91C753CE800C91866 /* IWantSproutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IWantSproutsViewController.swift; sourceTree = "<group>"; };
+		D22D1AFB1C7549E600C91866 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D22D1AFF1C754CE200C91866 /* sprouts_on_pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sprouts_on_pizza.jpg; sourceTree = "<group>"; };
+		D22D1B001C754CE200C91866 /* sprouts_on_toast.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sprouts_on_toast.jpg; sourceTree = "<group>"; };
+		D22D1B011C754CE200C91866 /* grilled_cheese.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grilled_cheese.jpg; sourceTree = "<group>"; };
+		D22D1B021C754CE200C91866 /* roasted_sprouts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roasted_sprouts.jpg; sourceTree = "<group>"; };
 		E369F818470310CABC756106 /* Pods-sprouts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.release.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.release.xcconfig"; sourceTree = "<group>"; };
 		EE04168788EB68EACCC5E9C8 /* Pods-sprouts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +124,8 @@
 		D22D1ABD1C7527E100C91866 /* sprouts */ = {
 			isa = PBXGroup;
 			children = (
+				D22D1AFE1C754C6700C91866 /* Demo Images */,
+				D22D1AFD1C754B8400C91866 /* Models */,
 				D22D1AEC1C7531E300C91866 /* Shared View Controllers */,
 				D22D1ABE1C7527E100C91866 /* AppDelegate.swift */,
 				D22D1AC21C7527E100C91866 /* Main.storyboard */,
@@ -153,6 +165,25 @@
 				D22D1AF11C7532AA00C91866 /* BaseMapViewController.swift */,
 			);
 			name = "Shared View Controllers";
+			sourceTree = "<group>";
+		};
+		D22D1AFD1C754B8400C91866 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D22D1AFB1C7549E600C91866 /* Item.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D22D1AFE1C754C6700C91866 /* Demo Images */ = {
+			isa = PBXGroup;
+			children = (
+				D22D1AFF1C754CE200C91866 /* sprouts_on_pizza.jpg */,
+				D22D1B001C754CE200C91866 /* sprouts_on_toast.jpg */,
+				D22D1B011C754CE200C91866 /* grilled_cheese.jpg */,
+				D22D1B021C754CE200C91866 /* roasted_sprouts.jpg */,
+			);
+			name = "Demo Images";
 			sourceTree = "<group>";
 		};
 		D2D83E34433DD813311D2AD2 /* Frameworks */ = {
@@ -279,9 +310,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22D1B031C754CE200C91866 /* sprouts_on_pizza.jpg in Resources */,
 				D22D1AC91C7527E100C91866 /* LaunchScreen.storyboard in Resources */,
+				D22D1B061C754CE200C91866 /* roasted_sprouts.jpg in Resources */,
 				D22D1AC61C7527E100C91866 /* Assets.xcassets in Resources */,
 				D22D1AC41C7527E100C91866 /* Main.storyboard in Resources */,
+				D22D1B051C754CE200C91866 /* grilled_cheese.jpg in Resources */,
+				D22D1B041C754CE200C91866 /* sprouts_on_toast.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +393,7 @@
 				D22D1AF01C75326800C91866 /* BaseNavigationController.swift in Sources */,
 				D22D1ABF1C7527E100C91866 /* AppDelegate.swift in Sources */,
 				D22D1AF21C7532AA00C91866 /* BaseMapViewController.swift in Sources */,
+				D22D1AFC1C7549E600C91866 /* Item.swift in Sources */,
 				D22D1AFA1C753CE800C91866 /* IWantSproutsViewController.swift in Sources */,
 				D22D1AF41C7532EB00C91866 /* Permissions.swift in Sources */,
 				D22D1AEE1C75321C00C91866 /* BaseViewController.swift in Sources */,
