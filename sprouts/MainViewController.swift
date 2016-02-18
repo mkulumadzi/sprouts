@@ -26,11 +26,9 @@ class MainViewController: BaseViewController, SlideDownTransitionDelegate {
         }
         iWantSproutsLabel.numberOfLines = 0
         iWantSproutsLabel.textAlignment = .Center
-//        iWantSproutsLabel.adjustsFontSizeToFitWidth = true
         
         iAteSproutsLabel.numberOfLines = 0
         iAteSproutsLabel.textAlignment = .Center
-//        iAteSproutsLabel.adjustsFontSizeToFitWidth = true
         
     }
     

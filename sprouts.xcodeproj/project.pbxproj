@@ -27,6 +27,9 @@
 		D22D1B091C7554A100C91866 /* IAteSproutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1B081C7554A100C91866 /* IAteSproutsViewController.swift */; };
 		D22D1B0B1C75564900C91866 /* SlideDownTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1B0A1C75564900C91866 /* SlideDownTransition.swift */; };
 		D22D1B0D1C755B5700C91866 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22D1B0C1C755B5700C91866 /* Place.swift */; };
+		D22D1B111C755FBD00C91866 /* park.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B0E1C755FBD00C91866 /* park.jpg */; };
+		D22D1B121C755FBD00C91866 /* joes_pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B0F1C755FBD00C91866 /* joes_pizza.jpg */; };
+		D22D1B131C755FBD00C91866 /* heavenly_kitchen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D22D1B101C755FBD00C91866 /* heavenly_kitchen.jpg */; };
 		D673901E1828D14010825A89 /* Pods_sprouts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15FCB6C60E8BADBDC07E6A1 /* Pods_sprouts.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +78,9 @@
 		D22D1B081C7554A100C91866 /* IAteSproutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAteSproutsViewController.swift; sourceTree = "<group>"; };
 		D22D1B0A1C75564900C91866 /* SlideDownTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideDownTransition.swift; sourceTree = "<group>"; };
 		D22D1B0C1C755B5700C91866 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		D22D1B0E1C755FBD00C91866 /* park.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = park.jpg; sourceTree = "<group>"; };
+		D22D1B0F1C755FBD00C91866 /* joes_pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = joes_pizza.jpg; sourceTree = "<group>"; };
+		D22D1B101C755FBD00C91866 /* heavenly_kitchen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heavenly_kitchen.jpg; sourceTree = "<group>"; };
 		E369F818470310CABC756106 /* Pods-sprouts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.release.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.release.xcconfig"; sourceTree = "<group>"; };
 		EE04168788EB68EACCC5E9C8 /* Pods-sprouts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sprouts.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sprouts/Pods-sprouts.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +193,9 @@
 		D22D1AFE1C754C6700C91866 /* Demo Images */ = {
 			isa = PBXGroup;
 			children = (
+				D22D1B0E1C755FBD00C91866 /* park.jpg */,
+				D22D1B0F1C755FBD00C91866 /* joes_pizza.jpg */,
+				D22D1B101C755FBD00C91866 /* heavenly_kitchen.jpg */,
 				D22D1AFF1C754CE200C91866 /* sprouts_on_pizza.jpg */,
 				D22D1B001C754CE200C91866 /* sprouts_on_toast.jpg */,
 				D22D1B011C754CE200C91866 /* grilled_cheese.jpg */,
@@ -320,10 +329,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22D1B031C754CE200C91866 /* sprouts_on_pizza.jpg in Resources */,
+				D22D1B121C755FBD00C91866 /* joes_pizza.jpg in Resources */,
+				D22D1B131C755FBD00C91866 /* heavenly_kitchen.jpg in Resources */,
 				D22D1AC91C7527E100C91866 /* LaunchScreen.storyboard in Resources */,
 				D22D1B061C754CE200C91866 /* roasted_sprouts.jpg in Resources */,
 				D22D1AC61C7527E100C91866 /* Assets.xcassets in Resources */,
 				D22D1AC41C7527E100C91866 /* Main.storyboard in Resources */,
+				D22D1B111C755FBD00C91866 /* park.jpg in Resources */,
 				D22D1B051C754CE200C91866 /* grilled_cheese.jpg in Resources */,
 				D22D1B041C754CE200C91866 /* sprouts_on_toast.jpg in Resources */,
 			);

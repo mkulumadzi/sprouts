@@ -12,10 +12,12 @@ import UIKit
 class Place: NSObject {
     
     var name:String!
+    var details:String!
     var image:UIImage?
     
-    init(name: String, image: UIImage?) {
+    init(name: String, details: String, image: UIImage?) {
         self.name = name
+        self.details = details
         
         if let image = image {
             self.image = image
